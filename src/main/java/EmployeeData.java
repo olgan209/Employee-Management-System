@@ -10,7 +10,10 @@ public class EmployeeData {
     public Connection connect() throws SQLException {
         try {
             conn = DriverManager.getConnection(URL, USER, PASSWORD);
-            System.out.println("Connected to Database.");
+            if(conn != null) {
+                System.out.println("Connected to Database.");
+            }
+            return conn;
         }
         catch(SQLException e){
             System.out.println(e.toString());
@@ -77,8 +80,7 @@ public class EmployeeData {
 
     public void updateEmployee(Employee employee) {
         String sql = "UPDATE employee SET name = ?, position = ?, hireDate = ? WHERE id = ?";
-        try (Connection conn = this.connect();
-             PreparedStatement ps = conn.prepareStatement(sql)){
+        try (PreparedStatement ps = conn.prepareStatement(sql)){
             ps.setString(1, employee.getName());
             ps.setString(2, employee.getPosition());
             ps.setDouble(3, employee.getSalary());
