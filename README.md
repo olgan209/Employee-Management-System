@@ -25,9 +25,14 @@ It is a great starting point for learning about relational databases and Java da
 
 ## Features
 - Create new employees and save them in a PostgreSQL database.
+  ![Снимок экрана 2024-11-26 180248](https://github.com/user-attachments/assets/dc496a57-9401-4bbd-92f2-2a32f97451ad)
 - Retrieve employee information by ID or view all employees.
+ ![Снимок экрана 2024-11-26 175208](https://github.com/user-attachments/assets/ae152fdb-03e7-4e9e-b279-82e4b790da97)
+ ![Снимок экрана 2024-11-26 175414](https://github.com/user-attachments/assets/d1b62350-0f44-4382-99ee-8007c8e90da5)
 - Update existing employee details.
+   ![Снимок экрана 2024-11-26 175829](https://github.com/user-attachments/assets/2575a937-1d7e-4c44-8c24-05e7571f9bba)
 - Delete employees from the database.
+   ![Снимок экрана 2024-11-26 180342](https://github.com/user-attachments/assets/e11ba824-c4fc-4885-afe5-0aac46d6cfb4)
 
 ---
 
